@@ -1,0 +1,369 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #37404d;
+}
+header {
+  background: #37404d;
+}
+.nav2 {
+  width: 100%;
+  visibility: hidden;
+  z-index: 10000;
+  width: 100%;
+  position: fixed;
+  background-color: #2f3748;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .nav {
+  z-index: 10000;
+  width: 100%;
+  position: fixed;
+  background-color: #2f3748;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #07abeb;
+  margin-left: 2rem;
+  margin-bottom: 0.2rem;
+}
+.nav2-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #07abeb;
+  margin-left: 2rem;
+  margin-bottom: 0.2rem;
+}
+.nav-item li {
+  list-style: none;
+}
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-link a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fffff3;
+  opacity: 0.7;
+}
+.nav-link a:hover {
+  opacity: 1;
+}
+
+.banner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.intro-name {
+  font-size: 2.5rem;
+  color: #56d0fe;
+}
+.intro p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+.btns {
+  margin-top: 1rem;
+}
+.intro .btn1 {
+  text-decoration: none;
+  font-size: 1.6rem;
+  background-color: #56d0fe;
+  border: 2px solid #07abeb;
+  color: #1e1e1e;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.intro .btn1:hover {
+  background-color: #fff;
+  color: #1e1e1e;
+  box-shadow: -1px 3px 0px 1px #1e1e1e;
+}
+.intro .btn2 {
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: 2px solid #07abeb;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 0.5rem;
+  transition: all 0.5s ease;
+}
+.btn2:hover {
+  background-color: #56d0fe;
+  color: #1e1e1e;
+  box-shadow: -1px 3px 0px 1px #1e1e1e;
+}
+.btns span {
+  margin: 1rem;
+}
+.banner-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-img {
+  width: 450px;
+}
+.about {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bio {
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px #000;
+  width: 40vw;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+.bio:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+.bio-header {
+  text-align: center;
+  color: #07abeb;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bio-paragraph {
+  max-width: 300px;
+}
+.bio p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1e1e1e;
+}
+.bio-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.bio-card {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px #000;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 20vw;
+  height: 40vh;
+  transition: all 0.5s ease;
+}
+.bio-card h1 {
+  color: #45c881;
+}
+.bio-card p {
+  color: #1e1e1e;
+}
+.bio-card:hover {
+  box-shadow: 0 0 15px #000;
+}
+.services {
+  width: 100%;
+  height: 92vh;
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+.services-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #fff;
+}
+.span-h {
+  margin-top: 2rem;
+  background-color: #07abeb;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.span-h:hover {
+  box-shadow: 0 0 15px #000;
+}
+.service-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px black;
+  margin: 1rem;
+  height: 50vh;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.service:hover {
+  box-shadow: 0 0 15px black;
+}
+.service h2 {
+  text-align: center;
+}
+.service p {
+  color: #1e1e1e;
+}
+.logo {
+  margin: 1rem;
+  width: 60px;
+  height: 60px;
+}
+.contact {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #07abeb;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.contact-header:hover {
+  box-shadow: 0 0 15px #000;
+}
+.container {
+  margin: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.container:hover {
+  box-shadow: 0 0 15px #000;
+}
+.contact .container {
+  font-size: 1.5rem;
+}
+.container span {
+  color: #45c881;
+  font-weight: bold;
+}
+@media (max-width: 950px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-img {
+    width: 0px;
+    height: 0px;
+  }
+  .bio-card {
+    height: 55vh;
+    width: 25vw;
+  }
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-card {
+    width: 1fr;
+  }
+  .contact {
+    margin-top: 10rem;
+  }
+}
+.nav2 .flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flex .nav-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.7;
+  margin-right: 2rem;
+}
+.nav-icon:hover {
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  .nav2 {
+    visibility: visible;
+  }
+}
+@media (max-width: 600px) {
+  .services {
+    margin-top: 20rem;
+    margin-bottom: 60rem;
+  }
+  .service-container {
+    grid-template-columns: 1fr;
+  }
+  .nav2-brand {
+    margin-left: 0.5rem;
+  }
+  .nav-icon {
+    margin-right: 6rem;
+  }
+  .about {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+  }
+  .bio {
+    width: 60vw;
+  }
+  .bio-cards {
+    flex-direction: column;
+  }
+  .bio-card {
+    width: 60vw;
+  }
+  .container {
+    width: 90vw;
+  }
+}
+@media (max-width: 360px) {
+  .nav-icon {
+    margin-left: 6rem;
+  }
+}
